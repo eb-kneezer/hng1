@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print My Name</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      main {
+        margin: auto;
+        height: 40vh;
+        width: 500px;
+        text-align: center;
+      }
+      .name {
+        height: 70%;
+        font-size: 34px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        padding: 10px 30px;
+        border: none;
+        outline: none;
+        background: rgb(209, 0, 0);
+        color: #fff;
+        font-size: 20px;
+      }
+      pre {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="name">click button to show name</div>
+      <button>Show Name</button>
+      <pre>
+        <code>
+
+            const nameContainer = document.querySelector(".name");
+            const showNameBtn = document.querySelector("button");
+
+            let isNameShowing = false;
+
+            showNameBtn.addEventListener("click", () => {
+              isNameShowing = !isNameShowing;
+              showNameBtn.textContent = `${
+                isNameShowing ? "Hide Name" : "Show Name"
+              }`;
+              nameContainer.textContent = `${
+                isNameShowing ? "Ebenezer Ogungbe" : "click button to show name"
+              }`;
+        </code>
+        </pre>
+    </main>
+    <script>
+      const nameContainer = document.querySelector(".name");
+      const showNameBtn = document.querySelector("button");
+
+      let isNameShowing = false;
+
+      showNameBtn.addEventListener("click", () => {
+        isNameShowing = !isNameShowing;
+        showNameBtn.textContent = `${
+          isNameShowing ? "Hide Name" : "Show Name"
+        }`;
+        nameContainer.textContent = `${
+          isNameShowing ? "Ebenezer Ogungbe" : "click button to show name"
+        }`;
+      });
+    </script>
+  </body>
+</html>
