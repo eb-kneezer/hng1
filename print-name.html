@@ -15,7 +15,8 @@
       main {
         margin: auto;
         height: 40vh;
-        width: 500px;
+        max-width: 500px;
+        width: 80%;
         text-align: center;
       }
       .name {
@@ -54,10 +55,14 @@
             showNameBtn.addEventListener("click", () => {
               isNameShowing = !isNameShowing;
               showNameBtn.textContent = `${
-                isNameShowing ? "Hide Name" : "Show Name"
+                isNameShowing 
+                  ? "Hide Name" 
+                  : "Show Name"
               }`;
               nameContainer.textContent = `${
-                isNameShowing ? "Ebenezer Ogungbe" : "click button to show name"
+                isNameShowing 
+                  ? "Ebenezer Ogungbe" 
+                  : "click button to show name"
               }`;
         </code>
         </pre>
