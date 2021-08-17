@@ -48,25 +48,23 @@
       <pre>
         <code>
 
-            const nameContainer 
-            = document.querySelector(".name");
-            const showNameBtn 
-            = document.querySelector("button");
+  const nameContainer = document.querySelector(".name");
+  const showNameBtn = document.querySelector("button");
 
-            let isNameShowing = false;
+  let isNameShowing = f
 
-            showNameBtn.addEventListener("click", () => {
-              isNameShowing = !isNameShowing;
-              showNameBtn.textContent = `${
-                isNameShowing 
-                  ? "Hide Name" 
-                  : "Show Name"
-              }`;
-              nameContainer.textContent = `${
-                isNameShowing 
-                  ? "Ebenezer Ogungbe" 
-                  : "click button to show name"
-              }`;
+  showNameBtn.addEventListener("click", () => {
+    isNameShowing = !isNameShowing;
+    showNameBtn.textContent = `${
+       isNameShowing 
+        ? "Hide Name" 
+        : "Show Name"
+    }`;
+    nameContainer.textContent = `${
+      isNameShowing 
+        ? "Ebenezer Ogungbe" 
+        : "click button to show name"
+    }`;
         </code>
         </pre>
     </main>
